@@ -1,7 +1,7 @@
-# Defender
+![Defender](docs/DefenderArcadeLogo.png)
 
 ## Introduction
-We will be making a 3D flying game with a similar theme to the original ![Defender](docs/DefenderArcade.png) arcade game.
+We will be making a 3D flying game with a similar theme to the original Defender arcade game.
 
 ## What we'll learn:
 * Importing 3D models and fixing up the materials
