@@ -1,4 +1,4 @@
-![Defender](docs/DefenderArcadeLogo.png)
+![Defender](https://raw.githubusercontent.com/CoderDojo-Ennis/UnityDefender/master/Docs/DefenderArcadeLogo.png)
 
 ## Introduction
 We will be making a 3D flying game with a similar theme to the original Defender arcade game.
