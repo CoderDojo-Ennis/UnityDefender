@@ -38,3 +38,8 @@ sysinfo.txt
 *.unitypackage
 Docs/~*.docx
 Logs
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+UniRx.Async.csproj
+UniRx.Async.Editor.csproj
+UniRx.csproj
