@@ -248,6 +248,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5441051636943987798, guid: bfa9c79a02698f64e94dccaa2b7bdb22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441051636943987798, guid: bfa9c79a02698f64e94dccaa2b7bdb22,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862254594950382339, guid: bfa9c79a02698f64e94dccaa2b7bdb22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050222453781820706, guid: bfa9c79a02698f64e94dccaa2b7bdb22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496578641310501503, guid: bfa9c79a02698f64e94dccaa2b7bdb22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554220121092736867, guid: bfa9c79a02698f64e94dccaa2b7bdb22,
+        type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa9c79a02698f64e94dccaa2b7bdb22, type: 3}
 --- !u!1 &534669902
@@ -325,10 +355,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0.18223573, z: 0, w: 0.9832549}
-  m_LocalPosition: {x: 500, y: 92, z: 500}
+  m_LocalRotation: {x: -0.0620419, y: -0.845736, z: 0.1008479, w: -0.5202991}
+  m_LocalPosition: {x: 500, y: 208, z: 500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -1419, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.6, y: -1683.2, z: 0}
