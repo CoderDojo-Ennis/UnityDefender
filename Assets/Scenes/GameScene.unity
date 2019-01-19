@@ -14,9 +14,9 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_Fog: 1
+  m_FogColor: {r: 0.6037736, g: 0.56896645, b: 0.504094, a: 1}
+  m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -48,7 +48,7 @@ LightmapSettings:
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
-    m_IndirectOutputScale: 1
+    m_IndirectOutputScale: 0
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -347,14 +348,14 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -366,12 +367,72 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.13762808, y: 0.6323288, z: -0.11548374, w: 0.7535796}
-  m_LocalPosition: {x: 500, y: 41, z: 500}
+  m_LocalPosition: {x: 500, y: 171.2, z: 500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20.7, y: -2080, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 534669905}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 1
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 0
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &1646398765 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 188840393213515089, guid: 85fd1aa3f61672845a2c5bab4419da37,
@@ -430,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 7979429251791434277, guid: 85fd1aa3f61672845a2c5bab4419da37,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33
+      value: 163.2
       objectReference: {fileID: 0}
     - target: {fileID: 7979429251791434277, guid: 85fd1aa3f61672845a2c5bab4419da37,
         type: 3}
