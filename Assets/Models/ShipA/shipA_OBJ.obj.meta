@@ -11,7 +11,12 @@ ModelImporter:
     2300000: shipA
     3300000: shipA
     4300000: shipA
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shipA_mat
+    second: {fileID: 2100000, guid: 4343d3bcd224ec24a96f3bcdb003c533, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
