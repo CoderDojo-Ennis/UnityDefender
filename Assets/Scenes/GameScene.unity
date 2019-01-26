@@ -591,5 +591,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6089850208138657916, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: PitchSpeed
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089850208138657916, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: YawSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089850208138657916, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: ForwardSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208393625963061364, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208393625963061364, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208393625963061364, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929992250290578237, guid: 94f8e80d420213c47ba82c34f9e3be58,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94f8e80d420213c47ba82c34f9e3be58, type: 3}
