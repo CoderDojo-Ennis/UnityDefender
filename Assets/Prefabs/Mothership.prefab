@@ -92,5 +92,15 @@ PrefabInstance:
       propertyPath: HoverHeight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 188840393211513747, guid: 85fd1aa3f61672845a2c5bab4419da37,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 188840393211513745, guid: 85fd1aa3f61672845a2c5bab4419da37,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85fd1aa3f61672845a2c5bab4419da37, type: 3}
