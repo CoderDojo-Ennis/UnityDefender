@@ -30,6 +30,13 @@ public class PlayerShoot : MonoBehaviour
 
                 // Create a particle effect
                 Instantiate(LaserImpactPrefab, hitInfo.point, Quaternion.identity);
+
+                // Does the thing we hit have a Die script?
+                var dieScript = hitInfo.transform.GetComponent<Die>();
+                if (dieScript != null)
+                {
+                    dieScript.DieNow();
+                }
             }
 
             // Create a new laser at the position and rotation of the gun
