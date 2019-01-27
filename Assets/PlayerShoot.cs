@@ -26,12 +26,12 @@ public class PlayerShoot : MonoBehaviour
             if (hitSomething)
             {
                 laserLength = hitInfo.distance;
-                Debug.Log("Length: " + hitInfo.distance);
-                Debug.Log(hitInfo);
             }
 
             // Create a new laser at the position and rotation of the gun
             GameObject laser = Instantiate(LaserPrefab, transform.position, transform.rotation);
+
+            // Set the length of the laser
             laser.transform.localScale = new Vector3(1, 1, laserLength);
 
             LaserSound.Play();
