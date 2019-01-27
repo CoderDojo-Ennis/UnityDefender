@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject LaserPrefab;
     public AudioSource LaserSound;
+    public float MaxDistance = 1000;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,20 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            // Did we hit anything?
+            float laserLength = MaxDistance;
+            Ray ray = new Ray(transform.position, transform.TransformDirection(Vector3.forward));
+            bool hitSomething = Physics.Raycast(ray, out RaycastHit hitInfo, MaxDistance);
+            if (hitSomething)
+            {
+                laserLength = hitInfo.distance;
+                Debug.Log("Length: " + hitInfo.distance);
+                Debug.Log(hitInfo);
+            }
+
             // Create a new laser at the position and rotation of the gun
-            Instantiate(LaserPrefab, transform.position, transform.rotation);
+            GameObject laser = Instantiate(LaserPrefab, transform.position, transform.rotation);
+            laser.transform.localScale = new Vector3(1, 1, laserLength);
 
             LaserSound.Play();
         }   
