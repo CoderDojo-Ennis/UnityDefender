@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject LaserPrefab;
-    public AudioSource LaserSound;
     public float MaxDistance = 1000;
+    private AudioSource LaserSound;
 
     // Start is called before the first frame update
     void Start()
