@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
         Vector2 input = GetInput();
 
         // Calculate how much forward to move this frame
-        Vector3 forward = this.transform.forward * ForwardSpeed * Time.deltaTime;
+        Vector3 forward = this.transform.forward * Mathf.Max(ForwardSpeed, 1) * Time.deltaTime;
 
         // Calulate how much up and to the right to move this frame
         Vector3 pitch = this.transform.up * input.y * PitchSpeed * Time.deltaTime;
