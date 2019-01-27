@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject LaserPrefab;
+    public GameObject LaserImpactPrefab;
     public float MaxDistance = 1000;
     private AudioSource LaserSound;
 
@@ -26,6 +27,9 @@ public class PlayerShoot : MonoBehaviour
             if (hitSomething)
             {
                 laserLength = hitInfo.distance;
+
+                // Create a particle effect
+                Instantiate(LaserImpactPrefab, hitInfo.point, Quaternion.identity);
             }
 
             // Create a new laser at the position and rotation of the gun

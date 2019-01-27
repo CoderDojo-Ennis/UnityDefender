@@ -342,6 +342,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LaserPrefab: {fileID: 7819619674988939691, guid: 4dc83766ca2d91d4caf94c009abaee0c,
     type: 3}
+  LaserImpactPrefab: {fileID: 4009778846320048166, guid: 6321e7e6e3ac9324693c843344c59e58,
+    type: 3}
   MaxDistance: 1000
 --- !u!82 &3638156277220326139
 AudioSource:
