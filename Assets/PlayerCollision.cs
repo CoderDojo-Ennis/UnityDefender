@@ -6,7 +6,15 @@ public class PlayerCollision : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision: " + collision);
-        GetComponent<Die>().DieNow();
+        switch(collision.gameObject.tag)
+        {
+            case "Enemy":
+            case "Terrain":
+                GetComponent<Die>().DieNow();
+                break;
+            default:
+                Debug.Log("Ship collision with: " + collision.gameObject.name);
+                break;
+        }
     }
 }
