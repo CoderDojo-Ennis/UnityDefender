@@ -9,6 +9,11 @@ public class PlayerMove : MonoBehaviour
     public float YawSpeed = 2;
     public Vector2 InputXY;
 
+    void Start()
+    {
+        Cursor.visible = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -34,8 +39,8 @@ public class PlayerMove : MonoBehaviour
     private Vector2 GetInput()
     {
         Vector2 input;
-        input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxis("Vertical");
+        input.x = Input.GetAxis("Horizontal") + Input.GetAxis("Mouse X");
+        input.y = Input.GetAxis("Vertical") + Input.GetAxis("Mouse Y");
         return input;
     }
 }
