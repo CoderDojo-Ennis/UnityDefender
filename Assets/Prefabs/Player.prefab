@@ -328,8 +328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ForwardSpeed: 20
-  PitchSpeed: -2
-  YawSpeed: 2
+  PitchSpeed: -1
+  YawSpeed: 0.6
   InputXY: {x: 0, y: 0}
 --- !u!54 &8208393625963061364
 Rigidbody:
