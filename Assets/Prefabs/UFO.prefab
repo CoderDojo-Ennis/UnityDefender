@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5186754711873929909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188840393213515089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28a2f9d4c36ecb4b8eb3b8a8080c28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColorChangeSpeed: 2
+  Saturation: 1
+  Luminance: 1
+  Intensity: 5
 --- !u!114 &5161857621107732218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,6 +57,7 @@ GameObject:
   - component: {fileID: 6334600051545507005}
   - component: {fileID: 2950727103187483517}
   - component: {fileID: 5032627850122161825}
+  - component: {fileID: 2546519723707351669}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Enemy
@@ -120,6 +137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChunksPrefab: {fileID: 518955115315012762, guid: 93c08353545d03e429f879610286e190,
     type: 3}
+  RespawnPrefab: {fileID: 0}
+  RespawnPosition: {fileID: 0}
+  RespawnDelaySeconds: 0
 --- !u!82 &5032627850122161825
 AudioSource:
   m_ObjectHideFlags: 0
@@ -216,6 +236,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2546519723707351669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020159411474235927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28a2f9d4c36ecb4b8eb3b8a8080c28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColorChangeSpeed: 2
+  Saturation: 1
+  Luminance: 1
+  Intensity: 5
 --- !u!1001 &188840393213547507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,6 +350,12 @@ GameObject:
 --- !u!4 &188840393213413747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 78926681240399744ba7c4a91e08723c,
+    type: 3}
+  m_PrefabInstance: {fileID: 188840393213547507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &188840393213515089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 78926681240399744ba7c4a91e08723c,
     type: 3}
   m_PrefabInstance: {fileID: 188840393213547507}
   m_PrefabAsset: {fileID: 0}
